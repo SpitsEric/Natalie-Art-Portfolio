@@ -172,8 +172,6 @@ section{
         justify-content: center;
         padding-right: 18rem;
 
-        
-
         .name {
             font-size: 3rem;
             background: rgb(2,0,36);
@@ -183,10 +181,6 @@ section{
             -webkit-text-fill-color: transparent; 
             -moz-text-fill-color: transparent;
             //span { color: var(--color-secondary); }
-        }
-        p {
-            margin: 1.5rem 0;
-            line-height: 2rem;
         }
     }
 }
@@ -402,4 +396,35 @@ section{
             opacity: .1;
         }
     }
+}
+
+.typewriter {
+    font-family: 'Poppins', sans-serif; /* Your font */
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333; /* Text color */
+    display: block;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Each span represents a line, it will type one by one */
+.typewriter span {
+    display: block; /* Ensure each line appears on a new line */
+    overflow: hidden;
+    width: 0; /* Starts with zero width */
+    animation: typing 2s steps(40, end) forwards; /* Adjust the steps based on your content */
+    animation-delay: 0s; /* Start typing immediately */
+}
+
+/* Stagger the typing animation for each line */
+.typewriter span:nth-child(1) { animation-delay: 0s; }
+.typewriter span:nth-child(2) { animation-delay: 2s; }
+.typewriter span:nth-child(3) { animation-delay: 4s; }
+.typewriter span:nth-child(4) { animation-delay: 6s; }
+.typewriter span:nth-child(5) { animation-delay: 8s; }
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
