@@ -90,7 +90,9 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
     top: 80%;
     right: 3%;
   }
